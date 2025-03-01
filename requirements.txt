@@ -5,3 +5,5 @@ jinja2
 uvicorn
 databases
 jinja2
+python-multipart
+models

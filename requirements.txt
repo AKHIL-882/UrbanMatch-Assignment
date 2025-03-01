@@ -5,4 +5,3 @@ jinja2
 uvicorn
 databases
 jinja2
-sqlite

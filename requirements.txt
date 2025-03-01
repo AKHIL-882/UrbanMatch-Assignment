@@ -6,4 +6,3 @@ uvicorn
 databases
 jinja2
 python-multipart
-models

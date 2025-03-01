@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="container mt-5">
+    <h1>{{ user.name }}'s Profile</h1>
+    <p><strong>Age:</strong> {{ user.age }}</p>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>Gender:</strong> {{ user.gender }}</p>
+    <p><strong>City:</strong> {{ user.city }}</p>
+    <p><strong>Interests:</strong> {{ user.interests }}</p>
+    <a class="btn btn-warning" href="/users/{{ user.id }}/update">Edit</a>
+    <a class="btn btn-danger" href="/users/{{ user.id }}/delete">Delete</a>
+    <a class="btn btn-info" href="/users/{{ user.id }}/matches">Find Matches</a>
+    <a class="btn btn-secondary" href="/">Back to Home</a>
+</body>
+</html>

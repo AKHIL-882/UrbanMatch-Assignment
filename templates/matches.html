@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matches</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="container mt-5">
+    <h1>Potential Matches for {{ user.name }}</h1>
+    <ul class="list-group">
+        {% for match in matches %}
+        <li class="list-group-item">{{ match.name }} ({{ match.email }}) - {{ match.age }} years old, Interests: {{ match.interests }}</li>
+        {% endfor %}
+    </ul>
+    <a class="btn btn-secondary mt-3" href="/">Back to Home</a>
+</body>
+</html>
